@@ -12,6 +12,11 @@ const comentarioRouter = require('./comentario')
 const problemaRouter = require('./problema')
 const tipoRouter = require('./tipo')
 
+const difunto = require('./difunto')
+const clasificacion = require('./clasificacion')
+const tumba = require('./tumba')
+
+
 function routerApi(app)
 {
     const router = express.Router();
@@ -25,6 +30,10 @@ function routerApi(app)
     router.use('/comentario',comentarioRouter);
     router.use('/problema',problemaRouter);
     router.use('/tipo',tipoRouter);
+
+    router.use('/difuntos',difunto);
+    router.use('/clasificacion',clasificacion);
+    router.use('/tumba',tumba);
 }
 
 module.exports = routerApi;
