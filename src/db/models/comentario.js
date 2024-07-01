@@ -24,7 +24,7 @@ const CommentSchema = {
     },
     fecha: {
         allowNull: false,
-        type: DataTypes.DATE,
+        type: DataTypes.DATEONLY,
         field: 'fecha',
         defaultValue: DataTypes.NOW
     },
